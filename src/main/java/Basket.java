@@ -19,4 +19,12 @@ public class Basket {
     public int countProducts(){
         return this.basket.size();
     }
+
+    public void addProduct(Product product) {
+            this.basket.add(product);
+        }
+
+     public void removeProduct(Product product){
+            this.basket.remove(product);
+     }
 }

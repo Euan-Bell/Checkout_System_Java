@@ -32,4 +32,34 @@ public class BasketTest {
         public void canCheckIfBasketIsEmpty(){
             assertEquals(0,basket.countProducts());
     }
+
+    @Test
+        public void canAddProductToBasket(){
+            basket.addProduct(pizza);
+            assertEquals(1,basket.countProducts());
+    }
+
+    @Test
+        public void canRemoveProductFromBasket(){
+            basket.addProduct(pizza);
+            basket.removeProduct(pizza);
+            assertEquals(0,basket.countProducts());
+    }
+
+    @Test
+        public void addMultipleProducts(){
+            basket.addProduct(pizza);
+            basket.addProduct(burger);
+            assertEquals(2,basket.countProducts());
+    }
+
+    @Test
+        public void removeMultipleProducts(){
+            basket.addProduct(pizza);
+            basket.addProduct(burger);
+            basket.removeProduct(pizza);
+            basket.removeProduct(burger);
+            assertEquals(0,basket.countProducts());
+
+    }
 }
