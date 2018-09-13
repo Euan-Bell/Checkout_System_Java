@@ -47,19 +47,24 @@ public class BasketTest {
     }
 
     @Test
-        public void addMultipleProducts(){
+        public void canAddMultipleProducts(){
             basket.addProduct(pizza);
             basket.addProduct(burger);
             assertEquals(2,basket.countProducts());
     }
 
     @Test
-        public void removeMultipleProducts(){
+        public void canRemoveMultipleProducts(){
             basket.addProduct(pizza);
             basket.addProduct(burger);
             basket.removeProduct(pizza);
             basket.removeProduct(burger);
             assertEquals(0,basket.countProducts());
+    }
 
+    @Test
+        public void canCheckBasket(){
+            basket.addProduct(pizza);
+            assertEquals(pizza,basket.checkBasket());
     }
 }

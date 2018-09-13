@@ -21,10 +21,14 @@ public class Basket {
     }
 
     public void addProduct(Product product) {
-            this.basket.add(product);
-        }
+        this.basket.add(product);
+    }
 
      public void removeProduct(Product product){
-            this.basket.remove(product);
+        this.basket.remove(product);
+     }
+
+     public void checkBasket(Product product){
+        return basket.map(product);
      }
 }
