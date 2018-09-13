@@ -10,6 +10,9 @@ public class Basket {
     public Basket(String name) {
         this.name = name;
         this.basket = new ArrayList<>();
+    }
 
+    public String getName() {
+        return name;
     }
 }
