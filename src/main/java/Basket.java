@@ -15,4 +15,8 @@ public class Basket {
     public String getName() {
         return name;
     }
+
+    public int countProducts(){
+        return this.basket.size();
+    }
 }

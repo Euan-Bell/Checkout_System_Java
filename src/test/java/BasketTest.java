@@ -27,4 +27,9 @@ public class BasketTest {
         public void canGetName(){
             assertEquals("shopping basket", basket.getName());
     }
+
+    @Test
+        public void canCheckIfBasketIsEmpty(){
+            assertEquals(0,basket.countProducts());
+    }
 }
