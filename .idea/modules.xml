@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/checkout_system.iml" filepath="$PROJECT_DIR$/.idea/modules/checkout_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/checkout_system_main.iml" filepath="$PROJECT_DIR$/.idea/modules/checkout_system_main.iml" group="checkout_system" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/checkout_system_test.iml" filepath="$PROJECT_DIR$/.idea/modules/checkout_system_test.iml" group="checkout_system" />
+    </modules>
+  </component>
+</project>
