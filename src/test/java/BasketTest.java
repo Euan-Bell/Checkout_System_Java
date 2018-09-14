@@ -62,9 +62,27 @@ public class BasketTest {
             assertEquals(0,basket.countProducts());
     }
 
+//    @Test
+//        public void canCheckBasket(){
+//            basket.addProduct(pizza);
+//            assertEquals(pizza,basket.checkBasket());
+//    }
+
     @Test
-        public void canCheckBasket(){
+        public void canGetTotalCost(){
             basket.addProduct(pizza);
-            assertEquals(pizza,basket.checkBasket());
+            basket.addProduct(burger);
+            assertEquals(2098, basket.getTotalCost());
+    }
+
+    @Test
+        public void canGetPromotionalCost(){
+            assertEquals(449, basket.getPromotionCost(salad));
+    }
+
+    @Test
+        public void canGetTotalPromotionalCost(){
+            basket.addProduct(salad);
+            assertEquals(449, basket.getTotalPromotionalCost());
     }
 }
