@@ -2,6 +2,8 @@ import Products.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -82,7 +84,16 @@ public class BasketTest {
         public void canGetProductsByName(){
             basket.addProduct(pizza);
             basket.addProduct(pizza);
-            assertEquals("Amazing Pizza!", basket.getProductsByName(String));
+        List <Product> pizza = basket.getProductsByName("Amazing Pizza!");
+            assertEquals(2, pizza.size());
+    }
+
+    @Test
+    public void canGetProductsByNameNoResult(){
+        basket.addProduct(pizza);
+        basket.addProduct(pizza);
+        List <Product> pizza = basket.getProductsByName("Average Hot dog!");
+        assertEquals(0, pizza.size());
     }
 
     @Test

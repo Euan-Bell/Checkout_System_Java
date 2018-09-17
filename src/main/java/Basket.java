@@ -1,5 +1,6 @@
 import Products.Product;
 import Products.Promotion;
+import java.util.List;
 
 import java.util.ArrayList;
 
