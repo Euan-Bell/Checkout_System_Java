@@ -26,9 +26,9 @@ public class Basket {
         this.products.add(product);
     }
 
-     public void removeProduct(Product product){
+    public void removeProduct(Product product){
         this.products.remove(product);
-     }
+    }
 
     public List <Product> getProductsByName(String name){
         ArrayList<Product> result = new ArrayList<Product>();
@@ -60,7 +60,7 @@ public class Basket {
         double promotionalCost = 0;
         int discount = 999;
         if ((this.getProductsByName(product.getName()).size() == 2) && (product.getPromotion() == Promotion.BOGOF)){
-            promotionalCost = product.getPrice() - discount;
+            promotionalCost = product.getPrice() * 2 - discount;
         }
         else promotionalCost = product.getPrice();
         return (int) Math.round(promotionalCost);
@@ -70,7 +70,7 @@ public class Basket {
         int promotionalCost = 0;
         int discount = 498;
         if ((this.getProductsByName(product.getName()).size() == 2) && (product.getPromotion() == Promotion.TWOFORX)){
-            promotionalCost = product.getPrice() - discount ;
+            promotionalCost = product.getPrice() * 2 - discount ;
         }
         else promotionalCost = product.getPrice();
         return promotionalCost;

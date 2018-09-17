@@ -11,12 +11,10 @@ public class BasketTest {
 
     Basket basket;
     Pizza pizza;
-    Pizza testPizza;
     Burger burger;
-    Burger testBurger;
     Fries fries;
     Salad salad;
-    Salad testSalad;
+
 
 
 
@@ -24,12 +22,9 @@ public class BasketTest {
         public void before(){
         basket = new Basket("shopping basket");
         pizza = new Pizza("Amazing Pizza!", "Dwt5F7KAhi", 1099, 1, Promotion.TWOFORX);
-        testPizza = new Pizza("Amazing Pizza!", "Dwt5F7KAhi", 2198, 2, Promotion.TWOFORX);
         burger = new Burger("Amazing Burger!", "PWWe3w1SDU", 999,1, Promotion.BOGOF);
-        testBurger = new Burger("Amazing Burger!", "PWWe3w1SDU", 1998,2, Promotion.BOGOF);
         fries = new Fries("Boring Fries!", "4MB7UfpTQs", 199, 1, Promotion.NULL);
         salad = new Salad("Amazing Salad!", "Gm1piPn7Fg", 499, 1, Promotion.TENPERCENTOFF);
-        testSalad = new Salad("Amazing Salad!", "Gm1piPn7Fg", 499, 3, Promotion.TENPERCENTOFF);
     }
 
 
@@ -105,7 +100,7 @@ public class BasketTest {
         public void canGetBOGOFPromotionalCost(){
             basket.addProduct(burger);
             basket.addProduct(burger);
-            assertEquals(999, basket.getBOGOFPromotionalCost(testBurger));
+            assertEquals(999, basket.getBOGOFPromotionalCost(burger));
     }
 
     @Test
@@ -118,7 +113,7 @@ public class BasketTest {
         public void canGetTwoForXPromotionalCost(){
             basket.addProduct(pizza);
             basket.addProduct(pizza);
-            assertEquals(1700, basket.getTwoForXPromotionalCost(testPizza));
+            assertEquals(1700, basket.getTwoForXPromotionalCost(pizza));
     }
 
     @Test
@@ -133,6 +128,16 @@ public class BasketTest {
         basket.addProduct(salad);
         assertEquals(898, basket.getTotalPromotionalCost());
     }
+
+//    @Test
+//    public void canGetTotalPromotionalCostWithTwoDifferentProducts(){
+//        basket.addProduct(salad);
+//        basket.addProduct(burger);
+//        basket.addProduct(burger);
+//        assertEquals(1448, basket.getTotalPromotionalCost());
+//    }
+
+    // Was unable
 
     @Test
         public void canCheckProductsWithGreaterQuantityOfOne(){
