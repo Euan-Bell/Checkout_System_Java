@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9210dd4-89ec-4864-bfc9-89eac4f8e2e9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/test/classes/BasketTest.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" />
     </list>
@@ -116,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
@@ -147,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="42" />
+            <state relative-caret-position="393">
+              <caret line="140" column="37" lean-forward="false" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1088#1089#0" expanded="true" />
@@ -551,8 +550,8 @@
         <option value="$PROJECT_DIR$/src/test/java/FriesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/BurgerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Products/Promotion.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Basket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
       </list>
     </option>
   </component>
@@ -655,7 +654,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.canGetProductsByNameNoResult">
+  <component name="RunManager" selected="JUnit.BasketTest.canCheckProductsWithGreaterQuantityOfOne">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -677,14 +676,54 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="BasketTest.canGetProductsByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasketTest.canCheckProductsWithGreaterQuantityOfOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="checkout_system_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canGetProductsByName" />
+      <option name="METHOD_NAME" value="canCheckProductsWithGreaterQuantityOfOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canCheckProductsWithGreaterQuantityOfOneWithPromotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="checkout_system_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canCheckProductsWithGreaterQuantityOfOneWithPromotion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canGetBOGOFPromotionalCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="checkout_system_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canGetBOGOFPromotionalCost" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -705,46 +744,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="METHOD_NAME" value="canGetProductsByNameNoResult" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canGetTotalPromotionalCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="checkout_system_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canGetTotalPromotionalCost" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BasketTest.canGetTotalPromotionalCostWithTwoMatchingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="checkout_system_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="canGetTotalPromotionalCostWithTwoMatchingProducts" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -838,19 +837,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTwoForXPromotionalCost" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTotalPromotionalCost" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTotalPromotionalCostWithTwoMatchingProducts" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByName" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByNameNoResult" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByNameNoResult" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetBOGOFPromotionalCost" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTwoForXPromotionalCost" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canCheckProductsWithGreaterQuantityOfOneWithPromotion" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canCheckProductsWithGreaterQuantityOfOne" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByNameNoResult" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByName" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTotalPromotionalCostWithTwoMatchingProducts" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTotalPromotionalCost" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTwoForXPromotionalCost" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canCheckProductsWithGreaterQuantityOfOne" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canCheckProductsWithGreaterQuantityOfOneWithPromotion" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetTwoForXPromotionalCost" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetBOGOFPromotionalCost" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest.canGetProductsByNameNoResult" />
       </list>
     </recent_temporary>
   </component>
@@ -871,13 +870,19 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasketTest_canGetBOGOFPromotionalCost - 2018.09.17 at 17h 55m 10s.xml">
+    <history-entry file="BasketTest_canCheckProductsWithGreaterQuantityOfOne - 2018.09.17 at 22h 07m 00s.xml">
+      <configuration name="BasketTest.canCheckProductsWithGreaterQuantityOfOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canCheckProductsWithGreaterQuantityOfOne - 2018.09.17 at 22h 07m 10s.xml">
+      <configuration name="BasketTest.canCheckProductsWithGreaterQuantityOfOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canCheckProductsWithGreaterQuantityOfOneWithPromotion - 2018.09.17 at 22h 06m 43s.xml">
+      <configuration name="BasketTest.canCheckProductsWithGreaterQuantityOfOneWithPromotion" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetBOGOFPromotionalCost - 2018.09.17 at 22h 03m 43s.xml">
       <configuration name="BasketTest.canGetBOGOFPromotionalCost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetBOGOFPromotionalCost - 2018.09.17 at 17h 55m 30s.xml">
-      <configuration name="BasketTest.canGetBOGOFPromotionalCost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_canGetBOGOFPromotionalCost - 2018.09.17 at 17h 55m 37s.xml">
+    <history-entry file="BasketTest_canGetBOGOFPromotionalCost - 2018.09.17 at 22h 04m 32s.xml">
       <configuration name="BasketTest.canGetBOGOFPromotionalCost" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canGetProductsByName - 2018.09.17 at 21h 25m 51s.xml">
@@ -889,16 +894,10 @@
     <history-entry file="BasketTest_canGetProductsByNameNoResult - 2018.09.17 at 21h 27m 05s.xml">
       <configuration name="BasketTest.canGetProductsByNameNoResult" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetTotalPromotionalCost - 2018.09.17 at 18h 06m 02s.xml">
-      <configuration name="BasketTest.canGetTotalPromotionalCost" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasketTest_canGetTotalPromotionalCostWithTwoMatchingProducts - 2018.09.17 at 18h 06m 28s.xml">
       <configuration name="BasketTest.canGetTotalPromotionalCostWithTwoMatchingProducts" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetTwoForXPromotionalCost - 2018.09.17 at 17h 54m 08s.xml">
-      <configuration name="BasketTest.canGetTwoForXPromotionalCost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasketTest_canGetTwoForXPromotionalCost - 2018.09.17 at 17h 56m 50s.xml">
+    <history-entry file="BasketTest_canGetTwoForXPromotionalCost - 2018.09.17 at 22h 05m 16s.xml">
       <configuration name="BasketTest.canGetTwoForXPromotionalCost" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -914,7 +913,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22727273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22727273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1140,26 +1139,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#2842#2843#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
@@ -1171,6 +1154,22 @@
             <element signature="e#574#575#0" expanded="true" />
             <element signature="e#620#621#0" expanded="true" />
             <element signature="e#730#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="140" column="37" lean-forward="false" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+            <element signature="e#2911#2912#0" expanded="true" />
           </folding>
         </state>
       </provider>

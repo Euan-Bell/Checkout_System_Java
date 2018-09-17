@@ -103,7 +103,8 @@ public class BasketTest {
 
     @Test
         public void canGetBOGOFPromotionalCost(){
-            basket.addProduct(testBurger);
+            basket.addProduct(burger);
+            basket.addProduct(burger);
             assertEquals(999, basket.getBOGOFPromotionalCost(testBurger));
     }
 
@@ -115,6 +116,7 @@ public class BasketTest {
 
     @Test
         public void canGetTwoForXPromotionalCost(){
+            basket.addProduct(pizza);
             basket.addProduct(pizza);
             assertEquals(1700, basket.getTwoForXPromotionalCost(testPizza));
     }
@@ -134,14 +136,18 @@ public class BasketTest {
 
     @Test
         public void canCheckProductsWithGreaterQuantityOfOne(){
-            basket.addProduct(testSalad);
+            basket.addProduct(salad);
+            basket.addProduct(salad);
+            basket.addProduct(salad);
             assertEquals(1497, basket.getTotalCost());
 
     }
 
     @Test
     public void canCheckProductsWithGreaterQuantityOfOneWithPromotion(){
-        basket.addProduct(testSalad);
+        basket.addProduct(salad);
+        basket.addProduct(salad);
+        basket.addProduct(salad);
         assertEquals(1347, basket.getTotalPromotionalCost());
 
     }

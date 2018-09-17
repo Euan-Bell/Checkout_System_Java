@@ -59,7 +59,7 @@ public class Basket {
     public int getBOGOFPromotionalCost(Product product){
         double promotionalCost = 0;
         int discount = 999;
-        if ((product.getQuantity() == 2) && (product.getPromotion() == Promotion.BOGOF)){
+        if ((this.getProductsByName(product.getName()).size() == 2) && (product.getPromotion() == Promotion.BOGOF)){
             promotionalCost = product.getPrice() - discount;
         }
         else promotionalCost = product.getPrice();
@@ -69,7 +69,7 @@ public class Basket {
     public int getTwoForXPromotionalCost(Product product){
         int promotionalCost = 0;
         int discount = 498;
-        if ((product.getQuantity() == 2) && (product.getPromotion() == Promotion.TWOFORX)){
+        if ((this.getProductsByName(product.getName()).size() == 2) && (product.getPromotion() == Promotion.TWOFORX)){
             promotionalCost = product.getPrice() - discount ;
         }
         else promotionalCost = product.getPrice();
