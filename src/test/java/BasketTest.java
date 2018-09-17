@@ -22,7 +22,7 @@ public class BasketTest {
         public void before(){
         basket = new Basket("shopping basket");
         pizza = new Pizza("Amazing Pizza!", "Dwt5F7KAhi", 1099, 1, Promotion.TWOFORX);
-        testPizza = new Pizza("Amazing Pizza!", "Dwt5F7KAhi", 1099, 2, Promotion.TWOFORX);
+        testPizza = new Pizza("Amazing Pizza!", "Dwt5F7KAhi", 2198, 2, Promotion.TWOFORX);
         burger = new Burger("Amazing Burger!", "PWWe3w1SDU", 999,1, Promotion.BOGOF);
         testBurger = new Burger("Amazing Burger!", "PWWe3w1SDU", 1998,2, Promotion.BOGOF);
         fries = new Fries("Boring Fries!", "4MB7UfpTQs", 199, 1, Promotion.NULL);
@@ -70,17 +70,19 @@ public class BasketTest {
             assertEquals(0,basket.countProducts());
     }
 
-//    @Test
-//        public void canCheckBasket(){
-//            basket.addProduct(pizza);
-//            assertEquals(pizza,basket.checkBasket());
-//    }
 
     @Test
         public void canGetTotalCost(){
             basket.addProduct(pizza);
             basket.addProduct(burger);
             assertEquals(2098, basket.getTotalCost());
+    }
+
+    @Test
+        public void canGetProductsByName(){
+            basket.addProduct(pizza);
+            basket.addProduct(pizza);
+            assertEquals("Amazing Pizza!", basket.getProductsByName(String));
     }
 
     @Test
@@ -102,8 +104,8 @@ public class BasketTest {
 
     @Test
         public void canGetTwoForXPromotionalCost(){
-            basket.addProduct(testPizza);
-            assertEquals(1799, basket.getTwoForXPromotionalCost(testPizza));
+            basket.addProduct(pizza);
+            assertEquals(1700, basket.getTwoForXPromotionalCost(testPizza));
     }
 
     @Test

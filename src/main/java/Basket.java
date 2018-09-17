@@ -29,6 +29,13 @@ public class Basket {
         this.products.remove(product);
      }
 
+    public List <Product> getProductsByName(String name){
+        ArrayList<Product> result = new ArrayList<Product>();
+        for(Product p : products){
+            if (name.equals( p.getName())) result.add(p);
+        }
+        return result;
+    }
 
     public int getTotalCost() {
         int totalCost = 0;
@@ -37,6 +44,7 @@ public class Basket {
         }
         return totalCost;
     }
+
 
     public int getPromotionCost(Product product){
         double promotionalCost = 0;
@@ -49,20 +57,22 @@ public class Basket {
 
     public int getBOGOFPromotionalCost(Product product){
         double promotionalCost = 0;
-        if (product.getQuantity() == 2){
-            promotionalCost = product.getPrice() -999;
+        int discount = 999;
+        if ((product.getQuantity() == 2) && (product.getPromotion() == Promotion.BOGOF)){
+            promotionalCost = product.getPrice() - discount;
         }
         else promotionalCost = product.getPrice();
         return (int) Math.round(promotionalCost);
     }
 
     public int getTwoForXPromotionalCost(Product product){
-        double promotionalCost = 0;
-        if (product.getQuantity() == 2){
-            promotionalCost = product.getPrice() +700;
+        int promotionalCost = 0;
+        int discount = 498;
+        if ((product.getQuantity() == 2) && (product.getPromotion() == Promotion.TWOFORX)){
+            promotionalCost = product.getPrice() - discount ;
         }
         else promotionalCost = product.getPrice();
-        return (int) Math.round(promotionalCost);
+        return promotionalCost;
     }
 
     public int getNULLPromotionalCost(Product product){
@@ -70,6 +80,9 @@ public class Basket {
         }
         return product.getPrice();
     }
+
+    // On review the previous methods should have been created in a promotion class and
+    // should have created as a switch case rather than 4 separate methods.
 
 
 
