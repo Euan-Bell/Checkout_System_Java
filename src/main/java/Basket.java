@@ -29,14 +29,11 @@ public class Basket {
         this.products.remove(product);
      }
 
-//     public ArrayList getProducts(){
-//        return this.products;
-//     }
 
     public int getTotalCost() {
         int totalCost = 0;
         for (int i = 0; i < this.products.size(); i++) {
-            totalCost = totalCost + this.products.get(i).getPrice();
+            totalCost = totalCost + (this.products.get(i).getPrice() * this.products.get(i).getQuantity());
         }
         return totalCost;
     }
@@ -50,10 +47,36 @@ public class Basket {
         return (int) Math.round(promotionalCost);
     }
 
+    public int getBOGOFPromotionalCost(Product product){
+        double promotionalCost = 0;
+        if (product.getQuantity() == 2){
+            promotionalCost = product.getPrice() -999;
+        }
+        else promotionalCost = product.getPrice();
+        return (int) Math.round(promotionalCost);
+    }
+
+    public int getTwoForXPromotionalCost(Product product){
+        double promotionalCost = 0;
+        if (product.getQuantity() == 2){
+            promotionalCost = product.getPrice() +700;
+        }
+        else promotionalCost = product.getPrice();
+        return (int) Math.round(promotionalCost);
+    }
+
+    public int getNULLPromotionalCost(Product product){
+        if (product.getPromotion() == Promotion.NULL){
+        }
+        return product.getPrice();
+    }
+
+
+
     public int getTotalPromotionalCost() {
         int totalPromotionalCost = 0;
         for (int i = 0; i < this.products.size(); i++) {
-            totalPromotionalCost = totalPromotionalCost + this.getPromotionCost(this.products.get(i));
+            totalPromotionalCost = totalPromotionalCost + (this.getPromotionCost(this.products.get(i)) * this.products.get(i).getQuantity());
         }
         return totalPromotionalCost;
     }
